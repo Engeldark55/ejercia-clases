@@ -83,8 +83,8 @@ class Programador(Persona):
     def __str__(self) -> str:
         return f"{super().__str__()} con sueldo de {self._sueldo}"
     
-if __name__ == "__main__":
+"""if __name__ == "__main__":
     person = Persona("lele",1)
     pythonista = Programador("lele",1,1000000)
     print(pythonista)    
-    print(person)
+    print(person)"""
