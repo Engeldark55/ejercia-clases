@@ -1,10 +1,10 @@
-from dispositivo_entrada import DispositivoEntrada 
+from dispositivo_entrada import DispositivoEntrada
 
-class Raton(DispositivoEntrada):
+class Teclado(DispositivoEntrada):
     contador_order = 0
     def __init__(self, marca:str, tipo_entrada:str) -> None:
-        Raton.contador_order += 1
-        self._id:int = Raton.contador_order
+        Teclado.contador_order += 1
+        self._id:int = Teclado.contador_order
         super().__init__(marca, tipo_entrada)
         
     def __str__(self) -> str:
@@ -15,8 +15,3 @@ class Raton(DispositivoEntrada):
     @id.setter
     def id(self,id):
         self._id = id
-        
-if __name__ == "__main__":
-    raton = Raton("HP","USB")
-    print(raton)
-    print(raton)
